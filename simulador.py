@@ -305,7 +305,11 @@ def cargar_preguntas():
             "tipo": "true_false",
             "respuesta": True
         },
-
+        {
+            "pregunta": "La pregunta fundamental sobre si el coste de la no-seguridad es mayor que el de la seguridad se relaciona con análisis coste-beneficio.",
+            "tipo": "true_false",
+            "respuesta": True
+        },
         {
             "pregunta": "La seguridad de la información implica que en contraposición, seguridad informática es un concepto más restrictivo que caracteriza la seguridad técnica de los sistemas informáticos.",
             "tipo": "true_false",
@@ -596,12 +600,13 @@ def cargar_preguntas():
         
         # Unir Conceptos (5 preguntas)
         {
-            "pregunta": "Unir cada descripción con el tipo de ataque que corresponde:",
+            "pregunta": "Relaciona cada tipo de ataque con su descripción:",
             "tipo": "unir_conceptos",
             "conceptos": {
-                "Un sniffer es un software que captura los paquetes del tráfico de la red con el objetivo de capturar nombres de usuario y passwords que se transmiten en claro. La defensa sería usar protocolos seguros de autenticación en la validación de los usuarios de las aplicaciones. Secuestro de sesiones. Este tipo de ataque explota las debilidades del protocolo TCP/IP secuestrando una conexión establecida": "Ataque de hombre en medio",
-                "En un sistema operativo multiusuario se conceden ventanas de tiempo a las distintas tareas de los procesos y a veces entre estas tareas se intercala en una de esas ventanas un atacante que puede comprometer la seguridad. En este ejemplo puede haber una ventana muy breve que dé la oportunidad para que un atacante substituya un archivo nuevo (que contiene código del ataque) por el archivo previamente comprobado": "Ataque de condiciones de carrera (TOCTOU)",
-                "Este ataque ocurre cuando el atacante intercepta la comunicación entre dos hosts, entonces suplanta la identidad de una de las dos partes": "Ataque de hombre en medio"
+                "Sniffer": "Software que captura paquetes del tráfico de red para obtener nombres de usuario y passwords",
+                "Secuestro de sesiones": "Explota debilidades del protocolo TCP/IP secuestrando una conexión establecida",
+                "Ataque de hombre en medio": "El atacante intercepta la comunicación entre dos hosts y suplanta la identidad de una de las partes",
+                "Ataque de condiciones de carrera (TOCTOU)": "Se aprovecha de una ventana de tiempo entre tareas para substituir archivos o comprometer la seguridad"
             }
         },
         {
